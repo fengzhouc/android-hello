@@ -1,14 +1,11 @@
 package com.example.myapplication;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        start = (Button) findViewById(R.id.btnstart);
+        start = (Button) findViewById(R.id.btnbind);
         stop = (Button) findViewById(R.id.btnstop);
+
         //创建启动Service的Intent,以及Intent属性
         final Intent intent = new Intent();
         intent.setAction("com.example.myapplication.MyService");
@@ -42,5 +40,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+    public void submit(View v){
+
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+
+    }
+
+    public void submit1(View v){
+
+        Intent intent = new Intent(this, IntentServiceActivity3.class);
+        startActivity(intent);
+
     }
 }

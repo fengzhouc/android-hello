@@ -38,13 +38,13 @@
         android:ems="10"
         android:hint="imput yourname"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnstart"
+        app:layout_constraintBottom_toTopOf="@+id/btnbind"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnstart"
+        android:id="@+id/btnbind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
@@ -53,8 +53,7 @@
         android:layout_marginEnd="267dp"
         android:layout_marginRight="267dp"
         android:layout_marginBottom="486dp"
-        android:onClick="submit"
-        android:text="submit"
+        android:text="btnbind"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,4 +76,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginRight="246dp"
+        android:text="btncancel"
+        app:layout_constraintBottom_toTopOf="@+id/btnstatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbind" />
+
+    <Button
+        android:id="@+id/btnstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginRight="246dp"
+        android:layout_marginBottom="387dp"
+        android:text="btnstatus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncancel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
