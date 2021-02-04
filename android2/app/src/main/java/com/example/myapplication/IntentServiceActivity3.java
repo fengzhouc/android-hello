@@ -13,16 +13,19 @@ public class IntentServiceActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_intent_service3);
 
         Intent it1 = new Intent("com.example.myapplication.MyIntentService");
+        it1.setPackage("com.example.myapplication");
         Bundle b1 = new Bundle();
         b1.putString("param", "s1");
         it1.putExtras(b1);
 
         Intent it2 = new Intent("com.example.myapplication.MyIntentService");
+        it2.setPackage("com.example.myapplication");
         Bundle b2 = new Bundle();
         b2.putString("param", "s2");
         it2.putExtras(b2);
 
         Intent it3 = new Intent("com.example.myapplication.MyIntentService");
+        it3.setPackage("com.example.myapplication");
         Bundle b3 = new Bundle();
         b3.putString("param", "s3");
         it3.putExtras(b3);
