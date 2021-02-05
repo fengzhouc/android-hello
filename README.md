@@ -15,4 +15,6 @@ service开发
 
 service两种启动方式
 
-activity与service间传输数据
+intentService开发
+
+activity与service间传输数据（MyService2）

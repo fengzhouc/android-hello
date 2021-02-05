@@ -14,7 +14,7 @@ public class MyService2 extends Service {
     private int count;
     private boolean quit;
 
-    //定义onBinder方法所返回的对象
+    //定义onBinder方法所返回的对象, service传输数据给activity
     private MyBinder binder = new MyBinder();
     public class MyBinder extends Binder
     {
