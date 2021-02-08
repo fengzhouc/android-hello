@@ -18,3 +18,7 @@ service两种启动方式
 intentService开发
 
 activity与service间传输数据（MyService2）
+
+## PhoneCallTV：来电显示
+
+使用的BroadcastPecevider监听电话状态
